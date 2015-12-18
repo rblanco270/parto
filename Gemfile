@@ -16,11 +16,11 @@ gem 'devise'
 
 
 group :development, :test do
-  gem 'byebug'
+  gem 'sqlite3'
 end
 
-group :development do
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
